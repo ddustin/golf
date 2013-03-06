@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  Golf
 //
 //  Created by Dustin Dettmer on 3/5/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RootViewController : UIViewController
 
 @end
