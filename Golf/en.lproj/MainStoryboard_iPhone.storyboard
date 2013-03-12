@@ -159,7 +159,7 @@
             <objects>
                 <viewController id="rbD-WL-oit" customClass="ArielViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptm-xb-isy">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" image="grass.jpg" id="1z0-Fu-9AB">
@@ -185,17 +185,25 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="QOR-Y6-DXK">
-                                <rect key="frame" x="0.0" y="80" width="320" height="375"/>
+                                <rect key="frame" x="0.0" y="80" width="320" height="287"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" image="loading.gif" id="PWU-5v-TaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="287"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Aerial" id="QWZ-Fd-MrF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="distanceNumber" destination="9cc-ZY-a6i" id="ZEU-zL-ok8"/>
                         <outlet property="distanceUnit" destination="sfN-bm-OiQ" id="kWI-Ye-k9S"/>
-                        <outlet property="scrollview" destination="QOR-Y6-DXK" id="egs-Mg-jdq"/>
+                        <outlet property="imageView" destination="PWU-5v-TaV" id="zZm-rl-HSg"/>
+                        <outlet property="scrollView" destination="QOR-Y6-DXK" id="BF1-yH-ntd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4v-ee-HqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,7 +219,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="V1G-Sl-Oxm">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="V1G-Sl-Oxm">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -232,12 +240,12 @@
             </objects>
             <point key="canvasLocation" x="2385" y="435"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Game Tab Bar View Controller-->
         <scene sceneID="Q7G-3W-0D0">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="fC4-nQ-bMN" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="fC4-nQ-bMN" customClass="GameTabBarViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Aii-4h-QuC"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="NnA-iF-x2D">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -273,7 +281,31 @@
         <image name="button_highlighted.png" width="91" height="45"/>
         <image name="grass.jpg" width="1024" height="768"/>
         <image name="hill_country_golf.jpg" width="1185" height="784"/>
+        <image name="loading.gif" width="640" height="480"/>
     </resources>
+    <classes>
+        <class className="ArielViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArielViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="distanceNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceUnit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="CourseChoiceViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CourseChoiceViewController.h"/>
+        </class>
+        <class className="GameTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameTabBarViewController.h"/>
+        </class>
+        <class className="HolesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HolesViewController.h"/>
+        </class>
+        <class className="RootViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

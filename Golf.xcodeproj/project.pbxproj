@@ -47,6 +47,8 @@
 		5859CD7F16EFCF12004D551C /* ArielViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7E16EFCF12004D551C /* ArielViewController.m */; };
 		5859CD8416EFCF9F004D551C /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD8316EFCF9F004D551C /* Hole.m */; };
 		5859CD8616EFD147004D551C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859CD8516EFD147004D551C /* CoreLocation.framework */; };
+		5859CD8D16EFD719004D551C /* GameTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD8C16EFD719004D551C /* GameTabBarViewController.m */; };
+		5859CD8F16EFD939004D551C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD8E16EFD939004D551C /* loading.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,9 @@
 		5859CD8216EFCF9F004D551C /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
 		5859CD8316EFCF9F004D551C /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
 		5859CD8516EFD147004D551C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5859CD8B16EFD719004D551C /* GameTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTabBarViewController.h; sourceTree = "<group>"; };
+		5859CD8C16EFD719004D551C /* GameTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTabBarViewController.m; sourceTree = "<group>"; };
+		5859CD8E16EFD939004D551C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +173,7 @@
 		5844F24116E67AB600E1F3DF /* Golf */ = {
 			isa = PBXGroup;
 			children = (
+				5859CD8716EFD6DF004D551C /* GameTabBarViewController */,
 				5859CD7C16EFCEFA004D551C /* ArielViewController */,
 				5859CD7616EFC697004D551C /* HolesViewController */,
 				5859CD6F16EFB74C004D551C /* CourseChoiceViewController */,
@@ -225,6 +231,7 @@
 		5844F26D16E6F73D00E1F3DF /* Gfx */ = {
 			isa = PBXGroup;
 			children = (
+				5859CD8E16EFD939004D551C /* loading.gif */,
 				5859CD7A16EFCD8C004D551C /* grass.jpg */,
 				5844F27E16E71FC600E1F3DF /* button_highlighted.png */,
 				5844F27F16E71FC600E1F3DF /* button.png */,
@@ -346,6 +353,15 @@
 			name = Hole;
 			sourceTree = "<group>";
 		};
+		5859CD8716EFD6DF004D551C /* GameTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD8B16EFD719004D551C /* GameTabBarViewController.h */,
+				5859CD8C16EFD719004D551C /* GameTabBarViewController.m */,
+			);
+			name = GameTabBarViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,6 +427,7 @@
 				5844F28116E71FC600E1F3DF /* button.png in Resources */,
 				5859CD3C16EF7E1E004D551C /* course_list.xml in Resources */,
 				5859CD7B16EFCD8C004D551C /* grass.jpg in Resources */,
+				5859CD8F16EFD939004D551C /* loading.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +459,7 @@
 				5859CD7916EFC6A7004D551C /* HolesViewController.m in Sources */,
 				5859CD7F16EFCF12004D551C /* ArielViewController.m in Sources */,
 				5859CD8416EFCF9F004D551C /* Hole.m in Sources */,
+				5859CD8D16EFD719004D551C /* GameTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

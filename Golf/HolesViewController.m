@@ -9,6 +9,7 @@
 #import "HolesViewController.h"
 #import "TouchXML.h"
 #import "Hole.h"
+#import "GameTabBarViewController.h"
 
 @interface HolesViewController ()
 
@@ -68,6 +69,18 @@
     cell.textLabel.text = [NSString stringWithFormat:@"Hole %@", [[self.holes objectAtIndex:indexPath.row] hole]];
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.destinationViewController isKindOfClass:GameTabBarViewController.class])
+    {
+        GameTabBarViewController *controller = segue.destinationViewController;
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        
+        controller.hole = [self.holes objectAtIndex:indexPath.row];
+    }
 }
 
 @end
