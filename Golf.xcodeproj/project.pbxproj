@@ -39,6 +39,14 @@
 		5859CD6516EFA9A0004D551C /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5416EFA9A0004D551C /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5859CD6616EFA9A0004D551C /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5616EFA9A0004D551C /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5859CD6716EFA9A0004D551C /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5916EFA9A0004D551C /* CTidy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD7216EFB76D004D551C /* CourseChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7116EFB76D004D551C /* CourseChoiceViewController.m */; };
+		5859CD7416EFB948004D551C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859CD7316EFB948004D551C /* libsqlite3.dylib */; };
+		5859CD7516EFC54D004D551C /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD6E16EFB6FC004D551C /* db.sqlite */; };
+		5859CD7916EFC6A7004D551C /* HolesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7816EFC6A7004D551C /* HolesViewController.m */; };
+		5859CD7B16EFCD8C004D551C /* grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD7A16EFCD8C004D551C /* grass.jpg */; };
+		5859CD7F16EFCF12004D551C /* ArielViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7E16EFCF12004D551C /* ArielViewController.m */; };
+		5859CD8416EFCF9F004D551C /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD8316EFCF9F004D551C /* Hole.m */; };
+		5859CD8616EFD147004D551C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859CD8516EFD147004D551C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +102,18 @@
 		5859CD5816EFA9A0004D551C /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		5859CD5916EFA9A0004D551C /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		5859CD5A16EFA9A0004D551C /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		5859CD6E16EFB6FC004D551C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		5859CD7016EFB76D004D551C /* CourseChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseChoiceViewController.h; sourceTree = "<group>"; };
+		5859CD7116EFB76D004D551C /* CourseChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseChoiceViewController.m; sourceTree = "<group>"; };
+		5859CD7316EFB948004D551C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5859CD7716EFC6A7004D551C /* HolesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolesViewController.h; sourceTree = "<group>"; };
+		5859CD7816EFC6A7004D551C /* HolesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolesViewController.m; sourceTree = "<group>"; };
+		5859CD7A16EFCD8C004D551C /* grass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass.jpg; sourceTree = "<group>"; };
+		5859CD7D16EFCF12004D551C /* ArielViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArielViewController.h; sourceTree = "<group>"; };
+		5859CD7E16EFCF12004D551C /* ArielViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArielViewController.m; sourceTree = "<group>"; };
+		5859CD8216EFCF9F004D551C /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
+		5859CD8316EFCF9F004D551C /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
+		5859CD8516EFD147004D551C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5859CD8616EFD147004D551C /* CoreLocation.framework in Frameworks */,
+				5859CD7416EFB948004D551C /* libsqlite3.dylib in Frameworks */,
 				5844F23C16E67AB600E1F3DF /* UIKit.framework in Frameworks */,
 				5844F23E16E67AB600E1F3DF /* Foundation.framework in Frameworks */,
 				5844F24016E67AB600E1F3DF /* CoreGraphics.framework in Frameworks */,
@@ -113,9 +135,10 @@
 		5844F22F16E67AB600E1F3DF = {
 			isa = PBXGroup;
 			children = (
-				5859CD3D16EFA9A0004D551C /* TouchXML */,
 				5844F26D16E6F73D00E1F3DF /* Gfx */,
+				5859CD3D16EFA9A0004D551C /* TouchXML */,
 				5859CD3A16EF7DFE004D551C /* Requests */,
+				5859CD8016EFCF8B004D551C /* Models */,
 				5844F24116E67AB600E1F3DF /* Golf */,
 				5844F23A16E67AB600E1F3DF /* Frameworks */,
 				5844F23916E67AB600E1F3DF /* Products */,
@@ -133,6 +156,8 @@
 		5844F23A16E67AB600E1F3DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5859CD8516EFD147004D551C /* CoreLocation.framework */,
+				5859CD7316EFB948004D551C /* libsqlite3.dylib */,
 				5844F23B16E67AB600E1F3DF /* UIKit.framework */,
 				5844F23D16E67AB600E1F3DF /* Foundation.framework */,
 				5844F23F16E67AB600E1F3DF /* CoreGraphics.framework */,
@@ -143,6 +168,9 @@
 		5844F24116E67AB600E1F3DF /* Golf */ = {
 			isa = PBXGroup;
 			children = (
+				5859CD7C16EFCEFA004D551C /* ArielViewController */,
+				5859CD7616EFC697004D551C /* HolesViewController */,
+				5859CD6F16EFB74C004D551C /* CourseChoiceViewController */,
 				5844F28216E7205500E1F3DF /* PlayViewController */,
 				5844F26716E6F42800E1F3DF /* AppDelegate */,
 				5844F26816E6F43100E1F3DF /* MainStoryboard */,
@@ -155,6 +183,7 @@
 		5844F24216E67AB600E1F3DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5859CD6E16EFB6FC004D551C /* db.sqlite */,
 				5844F24316E67AB600E1F3DF /* Golf-Info.plist */,
 				5844F24416E67AB600E1F3DF /* InfoPlist.strings */,
 				5844F24716E67AB600E1F3DF /* main.m */,
@@ -196,6 +225,7 @@
 		5844F26D16E6F73D00E1F3DF /* Gfx */ = {
 			isa = PBXGroup;
 			children = (
+				5859CD7A16EFCD8C004D551C /* grass.jpg */,
 				5844F27E16E71FC600E1F3DF /* button_highlighted.png */,
 				5844F27F16E71FC600E1F3DF /* button.png */,
 				5844F27A16E71F7A00E1F3DF /* button_ipad_highlighted.png */,
@@ -272,6 +302,50 @@
 			path = Tidy;
 			sourceTree = "<group>";
 		};
+		5859CD6F16EFB74C004D551C /* CourseChoiceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD7016EFB76D004D551C /* CourseChoiceViewController.h */,
+				5859CD7116EFB76D004D551C /* CourseChoiceViewController.m */,
+			);
+			name = CourseChoiceViewController;
+			sourceTree = "<group>";
+		};
+		5859CD7616EFC697004D551C /* HolesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD7716EFC6A7004D551C /* HolesViewController.h */,
+				5859CD7816EFC6A7004D551C /* HolesViewController.m */,
+			);
+			name = HolesViewController;
+			sourceTree = "<group>";
+		};
+		5859CD7C16EFCEFA004D551C /* ArielViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD7D16EFCF12004D551C /* ArielViewController.h */,
+				5859CD7E16EFCF12004D551C /* ArielViewController.m */,
+			);
+			name = ArielViewController;
+			sourceTree = "<group>";
+		};
+		5859CD8016EFCF8B004D551C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD8116EFCF92004D551C /* Hole */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5859CD8116EFCF92004D551C /* Hole */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD8216EFCF9F004D551C /* Hole.h */,
+				5859CD8316EFCF9F004D551C /* Hole.m */,
+			);
+			name = Hole;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5859CD7516EFC54D004D551C /* db.sqlite in Resources */,
 				5844F24616E67AB600E1F3DF /* InfoPlist.strings in Resources */,
 				5844F24E16E67AB600E1F3DF /* Default.png in Resources */,
 				5844F25016E67AB600E1F3DF /* Default@2x.png in Resources */,
@@ -335,6 +410,7 @@
 				5844F28016E71FC600E1F3DF /* button_highlighted.png in Resources */,
 				5844F28116E71FC600E1F3DF /* button.png in Resources */,
 				5859CD3C16EF7E1E004D551C /* course_list.xml in Resources */,
+				5859CD7B16EFCD8C004D551C /* grass.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +438,10 @@
 				5859CD6516EFA9A0004D551C /* CXMLNode_PrivateExtensions.m in Sources */,
 				5859CD6616EFA9A0004D551C /* CXMLNode_XPathExtensions.m in Sources */,
 				5859CD6716EFA9A0004D551C /* CTidy.m in Sources */,
+				5859CD7216EFB76D004D551C /* CourseChoiceViewController.m in Sources */,
+				5859CD7916EFC6A7004D551C /* HolesViewController.m in Sources */,
+				5859CD7F16EFCF12004D551C /* ArielViewController.m in Sources */,
+				5859CD8416EFCF9F004D551C /* Hole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
