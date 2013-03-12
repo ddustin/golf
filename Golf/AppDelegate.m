@@ -8,11 +8,26 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate()
+
+@property (nonatomic, strong) NSTimer *timer;
+
+@end
+
 @implementation AppDelegate
+
+- (void)fireEvent
+{
+    NSLog(@"Event fired.");
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(fireEvent) userInfo:nil repeats:YES];
+    });
+    
     return YES;
 }
 							

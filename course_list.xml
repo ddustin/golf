@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <AuthHeader xmlns="https://www.golflogix.com/">
+            <RegistrationId>2281493</RegistrationId>
+            <Nonce>39045384590786</Nonce>
+            <DeviceId>f9a29edc1fdae19f98cdb23189480f6b92f7f48c</DeviceId>
+            <DeviceType>1</DeviceType>
+            <AppVersion>3.0</AppVersion>
+            <SmartPhoneId>1</SmartPhoneId>
+            <CarrierType>0</CarrierType>
+            <SessionId>26877167</SessionId>
+        </AuthHeader>
+    </soap:Header>
+    <soap:Body>
+        <GetCourseListByLocation xmlns="https://www.golflogix.com/">
+            <lat>%@</lat>
+            <lon>%@</lon>
+        </GetCourseListByLocation>
+    </soap:Body>
+</soap:Envelope>

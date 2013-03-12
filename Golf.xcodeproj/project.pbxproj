@@ -25,6 +25,20 @@
 		5844F28016E71FC600E1F3DF /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5844F27E16E71FC600E1F3DF /* button_highlighted.png */; };
 		5844F28116E71FC600E1F3DF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5844F27F16E71FC600E1F3DF /* button.png */; };
 		5844F28516E7208300E1F3DF /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5844F28416E7208300E1F3DF /* PlayViewController.m */; };
+		5859CD3C16EF7E1E004D551C /* course_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD3B16EF7E1E004D551C /* course_list.xml */; };
+		5859CD5B16EFA9A0004D551C /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4016EFA9A0004D551C /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD5C16EFA9A0004D551C /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4216EFA9A0004D551C /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD5D16EFA9A0004D551C /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4416EFA9A0004D551C /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD5E16EFA9A0004D551C /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4616EFA9A0004D551C /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD5F16EFA9A0004D551C /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4816EFA9A0004D551C /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6016EFA9A0004D551C /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4A16EFA9A0004D551C /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6116EFA9A0004D551C /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4C16EFA9A0004D551C /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6216EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD4E16EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6316EFA9A0004D551C /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5016EFA9A0004D551C /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6416EFA9A0004D551C /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5216EFA9A0004D551C /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6516EFA9A0004D551C /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5416EFA9A0004D551C /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6616EFA9A0004D551C /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5616EFA9A0004D551C /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5859CD6716EFA9A0004D551C /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5916EFA9A0004D551C /* CTidy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +66,34 @@
 		5844F27F16E71FC600E1F3DF /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		5844F28316E7208300E1F3DF /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		5844F28416E7208300E1F3DF /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		5859CD3B16EF7E1E004D551C /* course_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = course_list.xml; sourceTree = "<group>"; };
+		5859CD3F16EFA9A0004D551C /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		5859CD4016EFA9A0004D551C /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		5859CD4116EFA9A0004D551C /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		5859CD4216EFA9A0004D551C /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		5859CD4316EFA9A0004D551C /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		5859CD4416EFA9A0004D551C /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		5859CD4516EFA9A0004D551C /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		5859CD4616EFA9A0004D551C /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		5859CD4716EFA9A0004D551C /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		5859CD4816EFA9A0004D551C /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		5859CD4916EFA9A0004D551C /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		5859CD4A16EFA9A0004D551C /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		5859CD4B16EFA9A0004D551C /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		5859CD4C16EFA9A0004D551C /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		5859CD4D16EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		5859CD4E16EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		5859CD4F16EFA9A0004D551C /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		5859CD5016EFA9A0004D551C /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		5859CD5116EFA9A0004D551C /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		5859CD5216EFA9A0004D551C /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		5859CD5316EFA9A0004D551C /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		5859CD5416EFA9A0004D551C /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		5859CD5516EFA9A0004D551C /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		5859CD5616EFA9A0004D551C /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		5859CD5816EFA9A0004D551C /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		5859CD5916EFA9A0004D551C /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		5859CD5A16EFA9A0004D551C /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +113,9 @@
 		5844F22F16E67AB600E1F3DF = {
 			isa = PBXGroup;
 			children = (
+				5859CD3D16EFA9A0004D551C /* TouchXML */,
 				5844F26D16E6F73D00E1F3DF /* Gfx */,
+				5859CD3A16EF7DFE004D551C /* Requests */,
 				5844F24116E67AB600E1F3DF /* Golf */,
 				5844F23A16E67AB600E1F3DF /* Frameworks */,
 				5844F23916E67AB600E1F3DF /* Products */,
@@ -170,6 +214,64 @@
 			name = PlayViewController;
 			sourceTree = "<group>";
 		};
+		5859CD3A16EF7DFE004D551C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD3B16EF7E1E004D551C /* course_list.xml */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		5859CD3D16EFA9A0004D551C /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD3E16EFA9A0004D551C /* Creation */,
+				5859CD4316EFA9A0004D551C /* CXHTMLDocument.h */,
+				5859CD4416EFA9A0004D551C /* CXHTMLDocument.m */,
+				5859CD4516EFA9A0004D551C /* CXMLDocument.h */,
+				5859CD4616EFA9A0004D551C /* CXMLDocument.m */,
+				5859CD4716EFA9A0004D551C /* CXMLDocument_PrivateExtensions.h */,
+				5859CD4816EFA9A0004D551C /* CXMLDocument_PrivateExtensions.m */,
+				5859CD4916EFA9A0004D551C /* CXMLElement.h */,
+				5859CD4A16EFA9A0004D551C /* CXMLElement.m */,
+				5859CD4B16EFA9A0004D551C /* CXMLElement_CreationExtensions.h */,
+				5859CD4C16EFA9A0004D551C /* CXMLElement_CreationExtensions.m */,
+				5859CD4D16EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.h */,
+				5859CD4E16EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.m */,
+				5859CD4F16EFA9A0004D551C /* CXMLNamespaceNode.h */,
+				5859CD5016EFA9A0004D551C /* CXMLNamespaceNode.m */,
+				5859CD5116EFA9A0004D551C /* CXMLNode.h */,
+				5859CD5216EFA9A0004D551C /* CXMLNode.m */,
+				5859CD5316EFA9A0004D551C /* CXMLNode_PrivateExtensions.h */,
+				5859CD5416EFA9A0004D551C /* CXMLNode_PrivateExtensions.m */,
+				5859CD5516EFA9A0004D551C /* CXMLNode_XPathExtensions.h */,
+				5859CD5616EFA9A0004D551C /* CXMLNode_XPathExtensions.m */,
+				5859CD5716EFA9A0004D551C /* Tidy */,
+				5859CD5A16EFA9A0004D551C /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		5859CD3E16EFA9A0004D551C /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD3F16EFA9A0004D551C /* CXMLDocument_CreationExtensions.h */,
+				5859CD4016EFA9A0004D551C /* CXMLDocument_CreationExtensions.m */,
+				5859CD4116EFA9A0004D551C /* CXMLNode_CreationExtensions.h */,
+				5859CD4216EFA9A0004D551C /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		5859CD5716EFA9A0004D551C /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				5859CD5816EFA9A0004D551C /* CTidy.h */,
+				5859CD5916EFA9A0004D551C /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +334,7 @@
 				5844F27D16E71F7A00E1F3DF /* button_ipad.png in Resources */,
 				5844F28016E71FC600E1F3DF /* button_highlighted.png in Resources */,
 				5844F28116E71FC600E1F3DF /* button.png in Resources */,
+				5859CD3C16EF7E1E004D551C /* course_list.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +349,19 @@
 				5844F24C16E67AB600E1F3DF /* AppDelegate.m in Sources */,
 				5844F26616E6F22300E1F3DF /* RootViewController.m in Sources */,
 				5844F28516E7208300E1F3DF /* PlayViewController.m in Sources */,
+				5859CD5B16EFA9A0004D551C /* CXMLDocument_CreationExtensions.m in Sources */,
+				5859CD5C16EFA9A0004D551C /* CXMLNode_CreationExtensions.m in Sources */,
+				5859CD5D16EFA9A0004D551C /* CXHTMLDocument.m in Sources */,
+				5859CD5E16EFA9A0004D551C /* CXMLDocument.m in Sources */,
+				5859CD5F16EFA9A0004D551C /* CXMLDocument_PrivateExtensions.m in Sources */,
+				5859CD6016EFA9A0004D551C /* CXMLElement.m in Sources */,
+				5859CD6116EFA9A0004D551C /* CXMLElement_CreationExtensions.m in Sources */,
+				5859CD6216EFA9A0004D551C /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				5859CD6316EFA9A0004D551C /* CXMLNamespaceNode.m in Sources */,
+				5859CD6416EFA9A0004D551C /* CXMLNode.m in Sources */,
+				5859CD6516EFA9A0004D551C /* CXMLNode_PrivateExtensions.m in Sources */,
+				5859CD6616EFA9A0004D551C /* CXMLNode_XPathExtensions.m in Sources */,
+				5859CD6716EFA9A0004D551C /* CTidy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +458,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Golf/Golf-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Golf/Golf-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ltidy",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -353,7 +477,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Golf/Golf-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/tidy,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Golf/Golf-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ltidy",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -378,6 +510,7 @@
 				5844F26016E67AB700E1F3DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
