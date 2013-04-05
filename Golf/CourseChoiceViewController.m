@@ -50,6 +50,7 @@ static int callback(void *param, int argc, char **argv, char **azColName)
     
     int res = sqlite3_open(url.path.UTF8String, &db);
     
+    (void)res;
     NSParameterAssert(res == SQLITE_OK);
     
     NSString *query = @"SELECT * FROM FavoriteCourse";

@@ -41,7 +41,6 @@
 		5859CD6716EFA9A0004D551C /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD5916EFA9A0004D551C /* CTidy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5859CD7216EFB76D004D551C /* CourseChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7116EFB76D004D551C /* CourseChoiceViewController.m */; };
 		5859CD7416EFB948004D551C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859CD7316EFB948004D551C /* libsqlite3.dylib */; };
-		5859CD7516EFC54D004D551C /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD6E16EFB6FC004D551C /* db.sqlite */; };
 		5859CD7916EFC6A7004D551C /* HolesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7816EFC6A7004D551C /* HolesViewController.m */; };
 		5859CD7B16EFCD8C004D551C /* grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD7A16EFCD8C004D551C /* grass.jpg */; };
 		5859CD7F16EFCF12004D551C /* ArielViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD7E16EFCF12004D551C /* ArielViewController.m */; };
@@ -49,6 +48,7 @@
 		5859CD8616EFD147004D551C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859CD8516EFD147004D551C /* CoreLocation.framework */; };
 		5859CD8D16EFD719004D551C /* GameTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859CD8C16EFD719004D551C /* GameTabBarViewController.m */; };
 		5859CD8F16EFD939004D551C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD8E16EFD939004D551C /* loading.gif */; };
+		58AA95B7170F79B3002DE131 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 58AA95B6170F79B3002DE131 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,7 +104,6 @@
 		5859CD5816EFA9A0004D551C /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		5859CD5916EFA9A0004D551C /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		5859CD5A16EFA9A0004D551C /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
-		5859CD6E16EFB6FC004D551C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		5859CD7016EFB76D004D551C /* CourseChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseChoiceViewController.h; sourceTree = "<group>"; };
 		5859CD7116EFB76D004D551C /* CourseChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseChoiceViewController.m; sourceTree = "<group>"; };
 		5859CD7316EFB948004D551C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -119,6 +118,7 @@
 		5859CD8B16EFD719004D551C /* GameTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTabBarViewController.h; sourceTree = "<group>"; };
 		5859CD8C16EFD719004D551C /* GameTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTabBarViewController.m; sourceTree = "<group>"; };
 		5859CD8E16EFD939004D551C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		58AA95B6170F79B3002DE131 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +189,7 @@
 		5844F24216E67AB600E1F3DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5859CD6E16EFB6FC004D551C /* db.sqlite */,
+				58AA95B6170F79B3002DE131 /* db.sqlite */,
 				5844F24316E67AB600E1F3DF /* Golf-Info.plist */,
 				5844F24416E67AB600E1F3DF /* InfoPlist.strings */,
 				5844F24716E67AB600E1F3DF /* main.m */,
@@ -413,7 +413,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5859CD7516EFC54D004D551C /* db.sqlite in Resources */,
 				5844F24616E67AB600E1F3DF /* InfoPlist.strings in Resources */,
 				5844F24E16E67AB600E1F3DF /* Default.png in Resources */,
 				5844F25016E67AB600E1F3DF /* Default@2x.png in Resources */,
@@ -428,6 +427,7 @@
 				5859CD3C16EF7E1E004D551C /* course_list.xml in Resources */,
 				5859CD7B16EFCD8C004D551C /* grass.jpg in Resources */,
 				5859CD8F16EFD939004D551C /* loading.gif in Resources */,
+				58AA95B7170F79B3002DE131 /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +561,7 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = "Golf/Golf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-ltidy",
 					"-lxml2",
@@ -580,6 +581,7 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = "Golf/Golf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-ltidy",
 					"-lxml2",
