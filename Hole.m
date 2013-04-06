@@ -8,6 +8,7 @@
 
 #import "Hole.h"
 #import "TouchXML.h"
+#import "Database.h"
 
 static CLLocationCoordinate2D location(NSString *str)
 {
@@ -20,6 +21,12 @@ static CLLocationCoordinate2D location(NSString *str)
     
     return ret;
 }
+
+@interface Hole()
+
+@property (assign) BOOL didLoad;
+
+@end
 
 @implementation Hole
 
@@ -89,6 +96,28 @@ static CLLocationCoordinate2D location(NSString *str)
     }
     
     return self;
+}
+
+- (void)loadExtraIfNeeded
+{
+    if(self.didLoad)
+        return;
+    
+    NSMutableString *query = [@"" mutableCopy];
+    
+    [query appendFormat:@"select GreenLat, GreenLon from HoleGreen"];
+    [query appendFormat:@" where CourseID=%@", self.courseId];
+    [query appendFormat:@" and HoleNum=%@", self.hole];
+    [query appendFormat:@" and GreenName='r'"];
+    
+    NSDictionary *result = [[Database query:query classType:NSMutableDictionary.class] lastObject];
+    
+    NSParameterAssert(result);
+    
+    double lat = [[result objectForKey:@"GreenLat"] doubleValue];
+    double lon = [[result objectForKey:@"GreenLon"] doubleValue];
+    
+    self.flag = CLLocationCoordinate2DMake(lat, lon);
 }
 
 - (NSString*)description

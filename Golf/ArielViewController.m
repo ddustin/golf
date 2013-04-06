@@ -56,4 +56,13 @@
     }];
 }
 
+- (void)addChildViewController:(UIViewController *)childController
+{
+    // We cast to ArielViewController* to get a correct signature for setHole:
+    if([childController respondsToSelector:@selector(setHole:)])
+        [(ArielViewController*)childController setHole:self.hole];
+    
+    [super addChildViewController:childController];
+}
+
 @end

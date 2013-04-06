@@ -7,6 +7,7 @@
 //
 
 #import "Database.h"
+#import <Foundation/NSKeyValueCoding.h>
 #import <sqlite3.h>
 
 @implementation Database
@@ -31,7 +32,7 @@
     
     while((res = sqlite3_step(stmt)) == SQLITE_ROW) {
         
-        id<NSObject> instance = [class new];
+        NSObject *instance = [class new];
         
         for(int i = 0; i < sqlite3_column_count(stmt); i++) {
             
@@ -78,9 +79,9 @@
                 NSString *name = [NSString stringWithUTF8String:sqlite3_column_name(stmt, i)];
                 
                 // Capitalize first character
-                name = [name stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[name substringToIndex:1] capitalizedString]];
+                NSString *capitalizedName = [name stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[name substringToIndex:1] capitalizedString]];
                 
-                NSString *selectorStr = [NSString stringWithFormat:@"set%@:", name];
+                NSString *selectorStr = [NSString stringWithFormat:@"set%@:", capitalizedName];
                 
                 SEL selector = NSSelectorFromString(selectorStr);
                 
@@ -90,6 +91,12 @@
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                     [instance performSelector:selector withObject:value];
 #pragma clang diagnostic pop
+                }
+                else if([instance respondsToSelector:@selector(setObject:forKey:)])
+                {
+                    NSMutableDictionary *tmp = (id)instance;
+                    
+                    [tmp setObject:value forKey:name];
                 }
                 else {
                     

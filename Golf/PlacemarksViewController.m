@@ -8,6 +8,7 @@
 
 #import "PlacemarksViewController.h"
 #import "Placemark.h"
+#import "Location.h"
 
 @interface PlacemarksViewController ()
 
@@ -24,6 +25,15 @@
     [super viewDidLoad];
     
     self.placemarks = [Placemark placemarksCourseId:self.hole.courseId.integerValue hole:self.hole.hole.integerValue];
+}
+
+- (void)addChildViewController:(UIViewController *)childController
+{
+    // We cast to PlacemarksViewController* to get a correct signature for setHole:
+    if([childController respondsToSelector:@selector(setHole:)])
+        [(PlacemarksViewController*)childController setHole:self.hole];
+    
+    [super addChildViewController:childController];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -47,8 +57,11 @@
     
     Placemark *placemark = [self.placemarks objectAtIndex:indexPath.row];
     
+    double distance = [[Location shared] metersOrYardsFrom:placemark.PlaceMarkLat.doubleValue
+                                                 longitude:placemark.PlaceMarkLon.doubleValue];
+    
     cell.textLabel.text = placemark.hazard.HazardLongName;
-    cell.detailTextLabel.text = @"200";
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.0f", distance];
     
     return cell;
 }

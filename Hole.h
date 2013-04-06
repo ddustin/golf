@@ -22,6 +22,10 @@
 @property (nonatomic, assign) CLLocationCoordinate2D tright;
 @property (nonatomic, assign) double angle;
 
+@property (nonatomic, assign) CLLocationCoordinate2D flag;
+
 - (id)initWithCourseData:(NSString*)corseData courseId:(NSString*)courseId hole:(NSString*)hole;
+
+- (void)loadExtraIfNeeded;
 
 @end

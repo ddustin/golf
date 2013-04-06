@@ -53,6 +53,9 @@
 		58AA95C1170FD7A6002DE131 /* Placemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95C0170FD7A6002DE131 /* Placemark.m */; };
 		58AA95C5170FDFBE002DE131 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95C4170FDFBE002DE131 /* Database.m */; };
 		58AA95CD17108A8C002DE131 /* HazardAbbreviations.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95CC17108A8C002DE131 /* HazardAbbreviations.m */; };
+		58AA95D217109D91002DE131 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95D117109D91002DE131 /* Location.m */; };
+		58AA95D61710A4AC002DE131 /* PlayHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95D51710A4AC002DE131 /* PlayHeaderViewController.m */; };
+		58AA95D81710ACA5002DE131 /* golfball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58AA95D71710ACA5002DE131 /* golfball.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,11 @@
 		58AA95C4170FDFBE002DE131 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 		58AA95CB17108A8C002DE131 /* HazardAbbreviations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazardAbbreviations.h; sourceTree = "<group>"; };
 		58AA95CC17108A8C002DE131 /* HazardAbbreviations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazardAbbreviations.m; sourceTree = "<group>"; };
+		58AA95D017109D91002DE131 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		58AA95D117109D91002DE131 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		58AA95D41710A4AC002DE131 /* PlayHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayHeaderViewController.h; sourceTree = "<group>"; };
+		58AA95D51710A4AC002DE131 /* PlayHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayHeaderViewController.m; sourceTree = "<group>"; };
+		58AA95D71710ACA5002DE131 /* golfball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = golfball.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 				5844F26D16E6F73D00E1F3DF /* Gfx */,
 				5859CD3D16EFA9A0004D551C /* TouchXML */,
 				5859CD3A16EF7DFE004D551C /* Requests */,
+				58AA95C2170FDFB1002DE131 /* Database */,
 				5859CD8016EFCF8B004D551C /* Models */,
 				5844F24116E67AB600E1F3DF /* Golf */,
 				5844F23A16E67AB600E1F3DF /* Frameworks */,
@@ -185,6 +194,7 @@
 		5844F24116E67AB600E1F3DF /* Golf */ = {
 			isa = PBXGroup;
 			children = (
+				58AA95D31710A494002DE131 /* PlayHeaderViewController */,
 				58AA95BA170F8927002DE131 /* PlacemarksViewController */,
 				5859CD8716EFD6DF004D551C /* GameTabBarViewController */,
 				5859CD7C16EFCEFA004D551C /* ArielViewController */,
@@ -194,6 +204,7 @@
 				5844F26716E6F42800E1F3DF /* AppDelegate */,
 				5844F26816E6F43100E1F3DF /* MainStoryboard */,
 				5844F26916E6F43A00E1F3DF /* RootViewController */,
+				58AA95CE17109D54002DE131 /* db */,
 				5844F24216E67AB600E1F3DF /* Supporting Files */,
 			);
 			path = Golf;
@@ -202,7 +213,6 @@
 		5844F24216E67AB600E1F3DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				58AA95B8170F87F5002DE131 /* db.sqlite */,
 				5844F24316E67AB600E1F3DF /* Golf-Info.plist */,
 				5844F24416E67AB600E1F3DF /* InfoPlist.strings */,
 				5844F24716E67AB600E1F3DF /* main.m */,
@@ -244,6 +254,7 @@
 		5844F26D16E6F73D00E1F3DF /* Gfx */ = {
 			isa = PBXGroup;
 			children = (
+				58AA95D71710ACA5002DE131 /* golfball.gif */,
 				5859CD8E16EFD939004D551C /* loading.gif */,
 				5859CD7A16EFCD8C004D551C /* grass.jpg */,
 				5844F27E16E71FC600E1F3DF /* button_highlighted.png */,
@@ -352,8 +363,8 @@
 		5859CD8016EFCF8B004D551C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				58AA95CF17109D81002DE131 /* Location */,
 				58AA95CA17108A79002DE131 /* HazardAbbreviations */,
-				58AA95C2170FDFB1002DE131 /* Database */,
 				58AA95BE170FD793002DE131 /* Placemark */,
 				5859CD8116EFCF92004D551C /* Hole */,
 			);
@@ -412,6 +423,33 @@
 				58AA95CC17108A8C002DE131 /* HazardAbbreviations.m */,
 			);
 			name = HazardAbbreviations;
+			sourceTree = "<group>";
+		};
+		58AA95CE17109D54002DE131 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95B8170F87F5002DE131 /* db.sqlite */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		58AA95CF17109D81002DE131 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95D017109D91002DE131 /* Location.h */,
+				58AA95D117109D91002DE131 /* Location.m */,
+			);
+			name = Location;
+			path = Golf;
+			sourceTree = "<group>";
+		};
+		58AA95D31710A494002DE131 /* PlayHeaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95D41710A4AC002DE131 /* PlayHeaderViewController.h */,
+				58AA95D51710A4AC002DE131 /* PlayHeaderViewController.m */,
+			);
+			name = PlayHeaderViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +518,7 @@
 				5859CD7B16EFCD8C004D551C /* grass.jpg in Resources */,
 				5859CD8F16EFD939004D551C /* loading.gif in Resources */,
 				58AA95B9170F87F5002DE131 /* db.sqlite in Resources */,
+				58AA95D81710ACA5002DE131 /* golfball.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +555,8 @@
 				58AA95C1170FD7A6002DE131 /* Placemark.m in Sources */,
 				58AA95C5170FDFBE002DE131 /* Database.m in Sources */,
 				58AA95CD17108A8C002DE131 /* HazardAbbreviations.m in Sources */,
+				58AA95D217109D91002DE131 /* Location.m in Sources */,
+				58AA95D61710A4AC002DE131 /* PlayHeaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

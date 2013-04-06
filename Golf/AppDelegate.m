@@ -16,18 +16,8 @@
 
 @implementation AppDelegate
 
-- (void)fireEvent
-{
-    NSLog(@"Event fired.");
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(fireEvent) userInfo:nil repeats:YES];
-    });
-    
     return YES;
 }
 							

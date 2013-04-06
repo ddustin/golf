@@ -7,6 +7,7 @@
 //
 
 #import "GameTabBarViewController.h"
+#import "Location.h"
 
 @interface GameTabBarViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Request GPS access
+    [Location shared];
     
     for(id val in self.viewControllers)
         if([val respondsToSelector:@selector(setHole:)])
