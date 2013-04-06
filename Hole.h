@@ -11,6 +11,7 @@
 
 @interface Hole : NSObject
 
+@property (nonatomic, strong) NSString *courseId;
 @property (nonatomic, strong) NSString *hole;
 
 @property (nonatomic, assign) float zoom;
@@ -21,6 +22,6 @@
 @property (nonatomic, assign) CLLocationCoordinate2D tright;
 @property (nonatomic, assign) double angle;
 
-- (id)initWithCourseData:(NSString*)corseData hole:(NSString*)hole;
+- (id)initWithCourseData:(NSString*)corseData courseId:(NSString*)courseId hole:(NSString*)hole;
 
 @end

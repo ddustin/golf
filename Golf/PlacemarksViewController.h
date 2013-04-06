@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Hole.h"
 
 @interface PlacemarksViewController : UITableViewController
+
+@property (nonatomic, strong) Hole *hole;
 
 @end

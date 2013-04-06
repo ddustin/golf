@@ -51,7 +51,7 @@
         
         NSString *hole = [[element.children objectAtIndex:0] stringValue];
         
-        [array addObject:[[Hole alloc] initWithCourseData:courseData hole:hole]];
+        [array addObject:[[Hole alloc] initWithCourseData:courseData courseId:[self.course objectForKey:@"CourseID"] hole:hole]];
     }
     
     self.holes = array;

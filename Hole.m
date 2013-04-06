@@ -23,11 +23,13 @@ static CLLocationCoordinate2D location(NSString *str)
 
 @implementation Hole
 
-- (id)initWithCourseData:(NSString*)corseData hole:(NSString*)hole
+- (id)initWithCourseData:(NSString*)corseData courseId:(NSString*)courseId hole:(NSString*)hole
 {
     self = [super init];
     
     if(self) {
+        
+        self.courseId = courseId;
         
         CXMLDocument *document = [[CXMLDocument alloc] initWithXMLString:corseData options:0 error:nil];
         

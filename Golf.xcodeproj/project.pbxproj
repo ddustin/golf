@@ -50,6 +50,9 @@
 		5859CD8F16EFD939004D551C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5859CD8E16EFD939004D551C /* loading.gif */; };
 		58AA95B9170F87F5002DE131 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 58AA95B8170F87F5002DE131 /* db.sqlite */; };
 		58AA95BD170F893D002DE131 /* PlacemarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95BC170F893D002DE131 /* PlacemarksViewController.m */; };
+		58AA95C1170FD7A6002DE131 /* Placemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95C0170FD7A6002DE131 /* Placemark.m */; };
+		58AA95C5170FDFBE002DE131 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95C4170FDFBE002DE131 /* Database.m */; };
+		58AA95CD17108A8C002DE131 /* HazardAbbreviations.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95CC17108A8C002DE131 /* HazardAbbreviations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +125,12 @@
 		58AA95B8170F87F5002DE131 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		58AA95BB170F893D002DE131 /* PlacemarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacemarksViewController.h; sourceTree = "<group>"; };
 		58AA95BC170F893D002DE131 /* PlacemarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacemarksViewController.m; sourceTree = "<group>"; };
+		58AA95BF170FD7A6002DE131 /* Placemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Placemark.h; sourceTree = "<group>"; };
+		58AA95C0170FD7A6002DE131 /* Placemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Placemark.m; sourceTree = "<group>"; };
+		58AA95C3170FDFBE002DE131 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		58AA95C4170FDFBE002DE131 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		58AA95CB17108A8C002DE131 /* HazardAbbreviations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazardAbbreviations.h; sourceTree = "<group>"; };
+		58AA95CC17108A8C002DE131 /* HazardAbbreviations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazardAbbreviations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +352,9 @@
 		5859CD8016EFCF8B004D551C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				58AA95CA17108A79002DE131 /* HazardAbbreviations */,
+				58AA95C2170FDFB1002DE131 /* Database */,
+				58AA95BE170FD793002DE131 /* Placemark */,
 				5859CD8116EFCF92004D551C /* Hole */,
 			);
 			name = Models;
@@ -373,6 +385,33 @@
 				58AA95BC170F893D002DE131 /* PlacemarksViewController.m */,
 			);
 			name = PlacemarksViewController;
+			sourceTree = "<group>";
+		};
+		58AA95BE170FD793002DE131 /* Placemark */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95BF170FD7A6002DE131 /* Placemark.h */,
+				58AA95C0170FD7A6002DE131 /* Placemark.m */,
+			);
+			name = Placemark;
+			sourceTree = "<group>";
+		};
+		58AA95C2170FDFB1002DE131 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95C3170FDFBE002DE131 /* Database.h */,
+				58AA95C4170FDFBE002DE131 /* Database.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		58AA95CA17108A79002DE131 /* HazardAbbreviations */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95CB17108A8C002DE131 /* HazardAbbreviations.h */,
+				58AA95CC17108A8C002DE131 /* HazardAbbreviations.m */,
+			);
+			name = HazardAbbreviations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +513,9 @@
 				5859CD8416EFCF9F004D551C /* Hole.m in Sources */,
 				5859CD8D16EFD719004D551C /* GameTabBarViewController.m in Sources */,
 				58AA95BD170F893D002DE131 /* PlacemarksViewController.m in Sources */,
+				58AA95C1170FD7A6002DE131 /* Placemark.m in Sources */,
+				58AA95C5170FDFBE002DE131 /* Database.m in Sources */,
+				58AA95CD17108A8C002DE131 /* HazardAbbreviations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
