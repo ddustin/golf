@@ -56,6 +56,8 @@
 		58AA95D217109D91002DE131 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95D117109D91002DE131 /* Location.m */; };
 		58AA95D61710A4AC002DE131 /* PlayHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95D51710A4AC002DE131 /* PlayHeaderViewController.m */; };
 		58AA95D81710ACA5002DE131 /* golfball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58AA95D71710ACA5002DE131 /* golfball.gif */; };
+		58AA95DC1710CA63002DE131 /* RecordSwingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95DB1710CA63002DE131 /* RecordSwingViewController.m */; };
+		58AA95E01710CC64002DE131 /* Club.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95DF1710CC64002DE131 /* Club.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +141,10 @@
 		58AA95D41710A4AC002DE131 /* PlayHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayHeaderViewController.h; sourceTree = "<group>"; };
 		58AA95D51710A4AC002DE131 /* PlayHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayHeaderViewController.m; sourceTree = "<group>"; };
 		58AA95D71710ACA5002DE131 /* golfball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = golfball.gif; sourceTree = "<group>"; };
+		58AA95DA1710CA63002DE131 /* RecordSwingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSwingViewController.h; sourceTree = "<group>"; };
+		58AA95DB1710CA63002DE131 /* RecordSwingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSwingViewController.m; sourceTree = "<group>"; };
+		58AA95DE1710CC64002DE131 /* Club.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Club.h; sourceTree = "<group>"; };
+		58AA95DF1710CC64002DE131 /* Club.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Club.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 		5844F24116E67AB600E1F3DF /* Golf */ = {
 			isa = PBXGroup;
 			children = (
+				58AA95D91710CA56002DE131 /* RecordSwingViewController */,
 				58AA95D31710A494002DE131 /* PlayHeaderViewController */,
 				58AA95BA170F8927002DE131 /* PlacemarksViewController */,
 				5859CD8716EFD6DF004D551C /* GameTabBarViewController */,
@@ -363,6 +370,7 @@
 		5859CD8016EFCF8B004D551C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				58AA95DD1710CC5C002DE131 /* Club */,
 				58AA95CF17109D81002DE131 /* Location */,
 				58AA95CA17108A79002DE131 /* HazardAbbreviations */,
 				58AA95BE170FD793002DE131 /* Placemark */,
@@ -450,6 +458,24 @@
 				58AA95D51710A4AC002DE131 /* PlayHeaderViewController.m */,
 			);
 			name = PlayHeaderViewController;
+			sourceTree = "<group>";
+		};
+		58AA95D91710CA56002DE131 /* RecordSwingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95DA1710CA63002DE131 /* RecordSwingViewController.h */,
+				58AA95DB1710CA63002DE131 /* RecordSwingViewController.m */,
+			);
+			name = RecordSwingViewController;
+			sourceTree = "<group>";
+		};
+		58AA95DD1710CC5C002DE131 /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				58AA95DE1710CC64002DE131 /* Club.h */,
+				58AA95DF1710CC64002DE131 /* Club.m */,
+			);
+			name = Club;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +583,8 @@
 				58AA95CD17108A8C002DE131 /* HazardAbbreviations.m in Sources */,
 				58AA95D217109D91002DE131 /* Location.m in Sources */,
 				58AA95D61710A4AC002DE131 /* PlayHeaderViewController.m in Sources */,
+				58AA95DC1710CA63002DE131 /* RecordSwingViewController.m in Sources */,
+				58AA95E01710CC64002DE131 /* Club.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

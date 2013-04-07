@@ -76,6 +76,25 @@ NSString *LocationUpdatedNotification = @"LocationUpdatedNotification";
 
 - (double)metersOrYardsFrom:(double)latitude longitude:(double)longitude
 {
+    // 72 - 66
+//    latitude -= 114075884.000090;
+//    longitude -= 114075884.000090;
+    
+    // 72 - 69
+//    latitude -= 114075884.00012;
+//    longitude -= 114075884.00012;
+    
+    // 72 - 69
+//    latitude -= 114075884.00015;
+//    longitude -= 114075884.00015;
+    
+    // 72 - 70
+//    latitude -= 114075884.00017;
+//    longitude -= 114075884.00017;
+        
+    latitude -= 114075884.00023;
+    longitude -= 114075884.00023;
+    
     double meters = [self metersFrom:latitude longitude:longitude];
     
     if([self usesMetricSystem])

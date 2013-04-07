@@ -24,8 +24,12 @@
 
 @property (nonatomic, assign) CLLocationCoordinate2D flag;
 
+@property (nonatomic, assign) int par;
+@property (nonatomic, assign) int handicap;
+
 - (id)initWithCourseData:(NSString*)corseData courseId:(NSString*)courseId hole:(NSString*)hole;
 
+// Don't bother calling this, it is called by initWithCourseData automatically.
 - (void)loadExtraIfNeeded;
 
 @end

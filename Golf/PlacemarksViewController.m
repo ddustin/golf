@@ -20,11 +20,26 @@
 
 @implementation PlacemarksViewController
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)awakeFromNib
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationUpdated) name:LocationUpdatedNotification object:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.placemarks = [Placemark placemarksCourseId:self.hole.courseId.integerValue hole:self.hole.hole.integerValue];
+}
+
+- (void)locationUpdated
+{
+    [self.tableView reloadData];
 }
 
 - (void)addChildViewController:(UIViewController *)childController

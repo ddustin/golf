@@ -93,6 +93,8 @@ static CLLocationCoordinate2D location(NSString *str)
                     break;
             }
         }
+        
+        [self loadExtraIfNeeded];
     }
     
     return self;
@@ -118,6 +120,8 @@ static CLLocationCoordinate2D location(NSString *str)
     double lon = [[result objectForKey:@"GreenLon"] doubleValue];
     
     self.flag = CLLocationCoordinate2DMake(lat, lon);
+    
+    // TODO: Load par and handicap
 }
 
 - (NSString*)description
