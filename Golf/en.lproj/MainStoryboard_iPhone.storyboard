@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="380" width="320" height="125"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KRr-cW-oFq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KRr-cW-oFq">
                                         <rect key="frame" x="115" y="40" width="90" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -241,8 +241,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="center" image="loading.gif" id="PWU-5v-TaV">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="287"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
                                     </imageView>
                                 </subviews>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="M0g-LH-OtV" appends="YES" id="2yL-s3-3Bk"/>
+                                </connections>
                             </scrollView>
                             <containerView contentMode="scaleToFill" id="snl-RO-SZM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
@@ -263,6 +267,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4v-ee-HqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="M0g-LH-OtV">
+                    <connections>
+                        <action selector="longTap:" destination="rbD-WL-oit" id="feQ-DM-Ugf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2420" y="-347"/>
         </scene>
@@ -559,6 +568,7 @@
         <class className="ArielViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ArielViewController.h"/>
             <relationships>
+                <relationship kind="action" name="longTap:"/>
                 <relationship kind="outlet" name="distanceNumber" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="distanceUnit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
@@ -601,6 +611,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="epb-Ca-CoZ"/>
+        <segue reference="O71-Kp-iLA"/>
     </inferredMetricsTieBreakers>
 </document>

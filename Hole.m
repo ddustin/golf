@@ -71,7 +71,7 @@ static CLLocationCoordinate2D location(NSString *str)
                 self.zoom = [[element stringValue] floatValue];
             
             if([element.name isEqual:@"center"])
-                self.center = location([element stringValue]);
+                self.center = location(@"51.486514,-0.001373");//[element stringValue]);
             
             if([element.name isEqual:@"gleft"])
                 self.gleft = location([element stringValue]);

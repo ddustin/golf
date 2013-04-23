@@ -58,6 +58,8 @@
 		58AA95D81710ACA5002DE131 /* golfball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58AA95D71710ACA5002DE131 /* golfball.gif */; };
 		58AA95DC1710CA63002DE131 /* RecordSwingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95DB1710CA63002DE131 /* RecordSwingViewController.m */; };
 		58AA95E01710CC64002DE131 /* Club.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA95DF1710CC64002DE131 /* Club.m */; };
+		58DBA4E1171334B300E70488 /* MapImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DBA4E0171334B300E70488 /* MapImage.m */; };
+		58DBA4E5171337E800E70488 /* MapMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DBA4E4171337E800E70488 /* MapMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +147,10 @@
 		58AA95DB1710CA63002DE131 /* RecordSwingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSwingViewController.m; sourceTree = "<group>"; };
 		58AA95DE1710CC64002DE131 /* Club.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Club.h; sourceTree = "<group>"; };
 		58AA95DF1710CC64002DE131 /* Club.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Club.m; sourceTree = "<group>"; };
+		58DBA4DF171334B300E70488 /* MapImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapImage.h; sourceTree = "<group>"; };
+		58DBA4E0171334B300E70488 /* MapImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapImage.m; sourceTree = "<group>"; };
+		58DBA4E3171337E800E70488 /* MapMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapMarker.h; sourceTree = "<group>"; };
+		58DBA4E4171337E800E70488 /* MapMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapMarker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +376,8 @@
 		5859CD8016EFCF8B004D551C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				58DBA4E2171337E000E70488 /* MapMarker */,
+				58DBA4DE171334A700E70488 /* MapImage */,
 				58AA95DD1710CC5C002DE131 /* Club */,
 				58AA95CF17109D81002DE131 /* Location */,
 				58AA95CA17108A79002DE131 /* HazardAbbreviations */,
@@ -476,6 +484,24 @@
 				58AA95DF1710CC64002DE131 /* Club.m */,
 			);
 			name = Club;
+			sourceTree = "<group>";
+		};
+		58DBA4DE171334A700E70488 /* MapImage */ = {
+			isa = PBXGroup;
+			children = (
+				58DBA4DF171334B300E70488 /* MapImage.h */,
+				58DBA4E0171334B300E70488 /* MapImage.m */,
+			);
+			name = MapImage;
+			sourceTree = "<group>";
+		};
+		58DBA4E2171337E000E70488 /* MapMarker */ = {
+			isa = PBXGroup;
+			children = (
+				58DBA4E3171337E800E70488 /* MapMarker.h */,
+				58DBA4E4171337E800E70488 /* MapMarker.m */,
+			);
+			name = MapMarker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,6 +611,8 @@
 				58AA95D61710A4AC002DE131 /* PlayHeaderViewController.m in Sources */,
 				58AA95DC1710CA63002DE131 /* RecordSwingViewController.m in Sources */,
 				58AA95E01710CC64002DE131 /* Club.m in Sources */,
+				58DBA4E1171334B300E70488 /* MapImage.m in Sources */,
+				58DBA4E5171337E800E70488 /* MapMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
